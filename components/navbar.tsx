@@ -27,10 +27,30 @@ export default function Navbar() {
 
 					{/* Desktop Menu */}
 					<div className='hidden md:flex items-center space-x-8'>
-						<Link className='hover:scale-105 transition-transform duration-300 font-semibold hover:font-bold' href='/'>Home</Link>
-						<Link className='hover:scale-105 transition-transform duration-300 font-semibold hover:font-bold' href='/blog'>Blog</Link>
-						<Link className='hover:scale-105 transition-transform duration-300 font-semibold hover:font-bold' href='/about'>About</Link>
-						<Link className='hover:scale-105 transition-transform duration-300 font-semibold hover:font-bold' href='/contact'>Contact</Link>
+						<Link
+							className='hover:scale-105 transition-transform duration-300 font-semibold hover:font-bold'
+							href='/'
+						>
+							Home
+						</Link>
+						<Link
+							className='hover:scale-105 transition-transform duration-300 font-semibold hover:font-bold'
+							href='/blog'
+						>
+							Blog
+						</Link>
+						<Link
+							className='hover:scale-105 transition-transform duration-300 font-semibold hover:font-bold'
+							href='/about'
+						>
+							About
+						</Link>
+						<Link
+							className='hover:scale-105 transition-transform duration-300 font-semibold hover:font-bold'
+							href='/contact'
+						>
+							Contact
+						</Link>
 						<div className='flex items-center space-x-1'>
 							<Button className='cursor-pointer' variant='outline'>
 								Login
@@ -38,16 +58,17 @@ export default function Navbar() {
 							<Button className='cursor-pointer' variant='outline'>
 								Signup
 							</Button>
-                            <ModeToggle/>
+							<ModeToggle />
 						</div>
 					</div>
 
 					{/* Mobile Button */}
 					<div className='md:hidden flex items-center'>
 						<Sheet>
-							<SheetTrigger>
+							<SheetTrigger className='mx-2'>
 								<Menu />
 							</SheetTrigger>
+							<ModeToggle />
 							<SheetContent>
 								<SheetHeader>
 									<SheetTitle className='font-bold'>HassanBlog</SheetTitle>
